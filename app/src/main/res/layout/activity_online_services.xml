@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".online_service.OnlineServicesActivity">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:title="Our Services"
+        android:titleTextColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/bankingServiceTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Digital  Banking Service"
+                android:textColor="@color/black"
+                android:background="@color/colorPrimaryTrans"
+                android:padding="@dimen/_8sdp"
+                android:fontFamily="@font/poppins_semibold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/bankingServiceRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bankingServiceTxt"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/lendingServiceTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Digital  Lending Service"
+                android:textColor="@color/black"
+                android:background="@color/colorPrimaryTrans"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_8sdp"
+                android:fontFamily="@font/poppins_semibold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bankingServiceRecycler"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lendingServiceRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lendingServiceTxt"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/egoveranceTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="E-Governance"
+                android:textColor="@color/black"
+                android:background="@color/colorPrimaryTrans"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_8sdp"
+                android:fontFamily="@font/poppins_semibold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lendingServiceRecycler"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/governanceRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/egoveranceTxt"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/fastTagTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fast Tag"
+                android:textColor="@color/black"
+                android:background="@color/colorPrimaryTrans"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_8sdp"
+                android:fontFamily="@font/poppins_semibold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/governanceRecycler"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fatTagRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fastTagTxt"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/ecommerceTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="E-commerce "
+                android:textColor="@color/black"
+                android:background="@color/colorPrimaryTrans"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_8sdp"
+                android:fontFamily="@font/poppins_semibold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fatTagRecycler"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ecommerceRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ecommerceTxt"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tourTravelTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tour and Travel"
+                android:textColor="@color/black"
+                android:background="@color/colorPrimaryTrans"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_8sdp"
+                android:fontFamily="@font/poppins_semibold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ecommerceRecycler"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/tourTravelRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tourTravelTxt"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

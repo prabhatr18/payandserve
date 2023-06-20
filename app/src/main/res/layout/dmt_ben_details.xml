@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <View
+        android:id="@+id/div1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:background="@color/green" />
+
+    <View
+        android:id="@+id/div"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@id/div1"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@drawable/ic_wave_trans"
+        android:visibility="visible"/>
+
+    <View
+        android:id="@+id/topBg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@id/div1"
+        android:background="@drawable/ic_wave" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardProfile"
+        android:layout_width="@dimen/_34sdp"
+        android:layout_height="@dimen/_34sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_35sdp"
+        app:cardCornerRadius="@dimen/_20sdp"
+        app:cardElevation="@dimen/_1sdp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_user_color" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:layout_toEndOf="@id/cardProfile"
+        android:fontFamily="@font/fredoka_one"
+        android:text="Farukh Ansari Kushwaha"
+        android:textColor="@color/textWhite"
+        android:textSize="@dimen/_14sdp" />
+
+    <TextView
+        android:id="@+id/tvContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvName"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_toRightOf="@id/cardProfile"
+        android:fontFamily="@font/fredoka_one"
+        android:text="7309151045"
+        android:textColor="@color/textWhite"
+        android:textSize="@dimen/_14sdp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAddBen"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/cardProfile"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/add_ben_button_bg"
+        android:fontFamily="@font/fredoka_one"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:text="Add Beneficiary"
+        android:textAllCaps="false"
+        android:textColor="@color/textWhite"
+        android:textSize="@dimen/_9sdp" />
+
+    <TextView
+        android:id="@+id/tvMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvContact"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/dmt_limit_bg"
+        android:fontFamily="@font/aldrich"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingTop="@dimen/_1sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_1sdp"
+        android:text="MAX : 20000"
+        android:textColor="@color/textGray"
+        android:textSize="@dimen/_8sdp" />
+
+    <TextView
+        android:id="@+id/tvMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMax"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/dmt_limit_bg"
+        android:fontFamily="@font/aldrich"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingTop="@dimen/_1sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_1sdp"
+        android:text="MIN : 0"
+        android:textColor="@color/textGray"
+        android:textSize="@dimen/_8sdp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/benList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topBg"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"/>
+</RelativeLayout>

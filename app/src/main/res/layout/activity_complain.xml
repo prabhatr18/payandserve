@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="@drawable/bg_compain"
+        android:scaleType="centerCrop" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/menuQuickLink"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:baselineAligned="false"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="@drawable/bg_shadow"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/secMsg"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/bottom"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:src="@drawable/ic_whatsapp2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center_horizontal"
+                        android:text="Connect"
+                        android:textColor="@color/textGray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/secCall"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/bottom"
+                    android:layout_toEndOf="@+id/secMsg"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:src="@drawable/ic_phone_receiver" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center_horizontal"
+                        android:text="Phone"
+                        android:textColor="@color/textGray" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#F1F1F1"
+                    android:fontFamily="@font/baloo"
+                    android:gravity="center"
+                    android:text="9504065205"
+                    android:textIsSelectable="true" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_marginEnd="@dimen/_14sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:background="@drawable/bg_shadow">
+                <LinearLayout
+                    android:id="@+id/secEmail"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/bottomEmail"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:src="@drawable/gmail_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center_horizontal"
+                        android:text="Email"
+                        android:textSize="12sp"
+                        android:textColor="@color/textGray" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/bottomEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#F1F1F1"
+                    android:fontFamily="@font/baloo"
+                    android:gravity="center"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="info@payandserve.com"
+                    android:textIsSelectable="true" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <EditText
+        android:id="@+id/etSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_shadow"
+        android:gravity="center_vertical"
+        android:focusable="false"
+        android:hint="Subject"
+        android:paddingStart="16dp"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/etDes"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_shadow"
+        android:gravity="top"
+        android:hint="Description"
+        android:paddingStart="16dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="16dp"
+        android:textSize="14sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnProceed"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_bt_pressed"
+        android:text="Generate Complain"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+</LinearLayout>

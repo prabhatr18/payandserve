@@ -1,0 +1,12 @@
+
+G
+java:S1602F",Remove useless curly braces around statement(Íñ–Ãúÿÿÿÿ
+[
+java:S1659R"EDeclare "imgMinus" and all following declarations on a separate line.(¶×ü¤
+Z
+java:S1659S"DDeclare "tvPrice" and all following declarations on a separate line.(¸°á 
+\
+java:S1192)"FDefine a constant instead of duplicating this literal " only" 3 times.(”¶—Ü
+z
+java:S1319"dThe type of "list" should be an interface such as "List" rather than the implementation "ArrayList".(ëÃ¥œ
+b	java:S101P"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÜúŽò

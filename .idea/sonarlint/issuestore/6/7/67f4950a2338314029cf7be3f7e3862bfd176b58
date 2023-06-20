@@ -1,0 +1,24 @@
+
+o	java:S116,"URename this field "PAGE_COUNT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊœÂÖùÿÿÿÿ
+s	java:S116-"YRename this field "MAX_PAGE_COUNT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªöÎ€ÿÿÿÿÿ
+d	java:S116."PRename this field "TITLE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÉÀ³W
+c	java:S116."ORename this field "TYPE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÉÀ³W
+h
+java:S1659("MDeclare "visibleItemCount" and all following declarations on a separate line.(üÆö›ýÿÿÿÿ
+7
+java:S1659.""Declare "TYPE" on a separate line.(ÉÀ³W
+U
+java:S1854=":Remove this useless assignment to local variable "imgPdf".(¬èïÿûÿÿÿÿ
+F
+java:S1481="+Remove this unused "imgPdf" local variable.(¬èïÿûÿÿÿÿ
+Q	java:S125E"<This block of commented-out lines of code should be removed.(ç‹¤Æ
+R	java:S125À"<This block of commented-out lines of code should be removed.(­ç¯ 
+R
+java:S2696Û"6Make the enclosing method "static" or remove this set.(›×‹ûÿÿÿÿ
+L
+java:S1068'"1Remove this unused "REQUEST_COUNT" private field.(‘î˜³úÿÿÿÿ
+E
+java:S1066e"/Merge this if statement with the enclosing one.(à—åª
+g	java:S117“"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅÞŠÜ
+U
+java:S1155Ÿ">Use isEmpty() to check whether the collection is empty or not.(¥Ë©Ñ

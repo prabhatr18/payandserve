@@ -1,0 +1,31 @@
+
+B
+java:S1602A",Remove useless curly braces around statement(ÜÈÈ
+n	java:S116L"TRename this field "TVbalance" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«°Ñıÿÿÿÿ
+a
+java:S1659L"FDeclare "TVbalance" and all following declarations on a separate line.(«°Ñıÿÿÿÿ
+;
+java:S1659M"&Declare "btnShare" on a separate line.(÷²Ù_
+V	java:S125X"<This block of commented-out lines of code should be removed.(‡‰ Ëüÿÿÿÿ
+A
+java:S1068",Remove this unused "basePath" private field.(€Üî
+k
+java:S1104L"PMake tvId a static final constant or non-public and provide accessors if needed.(«°Ñıÿÿÿÿ
+p
+java:S1104L"UMake TVbalance a static final constant or non-public and provide accessors if needed.(«°Ñıÿÿÿÿ
+p
+java:S1104L"UMake tvproduct a static final constant or non-public and provide accessors if needed.(«°Ñıÿÿÿÿ
+o
+java:S1104L"TMake tvnumber a static final constant or non-public and provide accessors if needed.(«°Ñıÿÿÿÿ
+n
+java:S1104L"SMake tvprice a static final constant or non-public and provide accessors if needed.(«°Ñıÿÿÿÿ
+o
+java:S1104L"TMake tvStatus a static final constant or non-public and provide accessors if needed.(«°Ñıÿÿÿÿ
+q
+java:S1104L"VMake tvDateTime a static final constant or non-public and provide accessors if needed.(«°Ñıÿÿÿÿ
+k
+java:S1104M"VMake btnInvoice a static final constant or non-public and provide accessors if needed.(÷²Ù_
+i
+java:S1104M"TMake btnShare a static final constant or non-public and provide accessors if needed.(÷²Ù_
+j
+java:S1104N"TMake cardView a static final constant or non-public and provide accessors if needed.(ÙÉ›ù

@@ -1,0 +1,16 @@
+
+j	java:S116"PRename this field "TITLE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãšØóÿÿÿÿÿ
+o
+java:S1450"TRemove the "TITLE" field and declare it as a local variable in the relevant methods.(ãšØóÿÿÿÿÿ
+V
+java:S1854"";Remove this useless assignment to local variable "tvTitle".(¾¾üïüÿÿÿÿ
+G
+java:S1481"",Remove this unused "tvTitle" local variable.(¾¾üïüÿÿÿÿ
+V	java:S125#"<This block of commented-out lines of code should be removed.(ô…¨üÿÿÿÿ
+˜
+java:S1186³"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ê³ôä
+<	java:S131?""Add a default case to this switch.(¥´ƒüÿÿÿÿ
+D
+java:S1068")Remove this unused "TITLE" private field.(ãšØóÿÿÿÿÿ
+b
+java:S1192"GDefine a constant instead of duplicating this literal "title" 19 times.(¿¤¼ÿÿÿÿÿ

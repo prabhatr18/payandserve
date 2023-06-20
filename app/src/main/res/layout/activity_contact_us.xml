@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".contact_us.ContactUsActivity">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/contactInfoTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Information"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/_13sdp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="@dimen/_17sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contactInfoTxt"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_13sdp">
+
+
+   <androidx.appcompat.widget.AppCompatTextView
+       android:id="@+id/officeAddressTxt"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Office Address :"
+       android:layout_margin="@dimen/_13sdp"
+       android:layout_marginTop="@dimen/_20sdp"
+       android:textColor="@color/colorPrimaryText"
+       app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addressCardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_13sdp"
+        app:cardUseCompatPadding="true"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:elevation="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="@id/officeAddressTxt"
+        app:layout_constraintTop_toBottomOf="@id/officeAddressTxt"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/mapIc"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/map"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/office_address"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/mapIc"
+                app:layout_constraintTop_toTopOf="@id/mapIc" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/helplineTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help Line No :"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintStart_toStartOf="@id/officeAddressTxt"
+        app:layout_constraintTop_toBottomOf="@id/addressCardView"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/helplineCardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_13sdp"
+        app:cardUseCompatPadding="true"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:elevation="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="@id/officeAddressTxt"
+        app:layout_constraintTop_toBottomOf="@id/helplineTxt"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/helplineIcOne"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/call_center"
+                android:layout_marginStart="@dimen/_5sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/helplineNumOne"
+                app:layout_constraintBottom_toBottomOf="@id/helplineNumOne"/>
+
+            <TextView
+                android:id="@+id/helplineNumOne"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="+0612-2640100"
+                android:textSize="12sp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginStart="@dimen/_7sdp"
+                app:layout_constraintStart_toEndOf="@id/helplineIcOne"
+                app:layout_constraintEnd_toStartOf="@id/helplineNumTwo"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/helplineNumThree"/>
+
+            <ImageView
+                android:id="@+id/helplineIcTwo"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/call_center"
+                android:layout_marginEnd="@dimen/_5sdp"
+                app:layout_constraintEnd_toStartOf="@id/helplineNumTwo"
+                app:layout_constraintTop_toTopOf="@id/helplineNumTwo"
+                app:layout_constraintBottom_toBottomOf="@id/helplineNumTwo"/>
+
+
+            <TextView
+                android:id="@+id/helplineNumTwo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="+91 9504-06-5205"
+                android:textSize="12sp"
+                android:layout_marginEnd="@dimen/_7sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/helplineNumOne"
+                app:layout_constraintTop_toTopOf="@id/helplineNumOne"
+                app:layout_constraintBottom_toBottomOf="@id/helplineNumOne"/>
+
+            <ImageView
+                android:id="@+id/helplineIcThree"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/call_center"
+              app:layout_constraintStart_toStartOf="@id/helplineIcOne"
+                app:layout_constraintEnd_toEndOf="@id/helplineIcOne"
+                app:layout_constraintTop_toTopOf="@id/helplineNumThree"
+                app:layout_constraintBottom_toBottomOf="@id/helplineNumThree"/>
+
+            <TextView
+                android:id="@+id/helplineNumThree"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="+91 810-222-8300"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@id/helplineIcThree"
+                app:layout_constraintEnd_toStartOf="@id/helplineNumFour"
+                app:layout_constraintTop_toBottomOf="@id/helplineNumOne" />
+
+            <ImageView
+                android:id="@+id/helplineIcFour"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/call_center"
+                android:layout_marginEnd="@dimen/_5sdp"
+                app:layout_constraintEnd_toStartOf="@id/helplineNumFour"
+                app:layout_constraintTop_toTopOf="@id/helplineNumFour"
+                app:layout_constraintBottom_toBottomOf="@id/helplineNumFour"/>
+
+            <TextView
+                android:id="@+id/helplineNumFour"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="+91 880-485-0420"
+                android:layout_marginEnd="@dimen/_7sdp"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/helplineNumThree"
+                app:layout_constraintTop_toTopOf="@id/helplineNumThree"
+                app:layout_constraintBottom_toBottomOf="@id/helplineNumThree"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/emailTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Id :"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintStart_toStartOf="@id/officeAddressTxt"
+        app:layout_constraintTop_toBottomOf="@id/helplineCardView"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/emailCardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_13sdp"
+        app:cardUseCompatPadding="true"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:elevation="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="@id/officeAddressTxt"
+        app:layout_constraintTop_toBottomOf="@id/emailTxt"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/emailIc"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/email"
+                android:layout_marginTop="@dimen/_7sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/emailOne"
+                app:layout_constraintBottom_toBottomOf="@id/emailThree"
+               />
+
+            <TextView
+                android:id="@+id/emailOne"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="support@payanndserve.com"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginEnd="@dimen/_7sdp"
+                app:layout_constraintStart_toEndOf="@id/emailIc"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+             />
+
+
+            <TextView
+                android:id="@+id/emailTwo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="info@payandserve.com"
+                android:layout_marginEnd="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+               app:layout_constraintStart_toStartOf="@id/emailOne"
+                app:layout_constraintEnd_toEndOf="@id/emailOne"
+               app:layout_constraintTop_toBottomOf="@id/emailOne" />
+
+            <TextView
+                android:id="@+id/emailThree"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="sales@payandserve.com"
+                android:layout_marginEnd="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                app:layout_constraintStart_toStartOf="@id/emailTwo"
+                app:layout_constraintEnd_toEndOf="@id/emailTwo"
+                app:layout_constraintTop_toBottomOf="@id/emailTwo" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/whatsappTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Whatsapp Contact :"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintStart_toStartOf="@id/officeAddressTxt"
+        app:layout_constraintTop_toBottomOf="@id/emailCardView"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/whatsappOneCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_13sdp"
+        app:cardUseCompatPadding="true"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:elevation="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_2sdp"
+        app:layout_constraintEnd_toStartOf="@id/whatsappTwoCard"
+        app:layout_constraintStart_toStartOf="@id/whatsappTxt"
+        app:layout_constraintTop_toBottomOf="@id/whatsappTxt"
+       >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/whatsappOneLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/whatsappIc"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/whatsapp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/whatNumOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+91 9504065205"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/_5sdp"
+                app:layout_constraintStart_toEndOf="@id/whatsappIc"
+                app:layout_constraintTop_toTopOf="@id/whatsappIc"
+                 app:layout_constraintBottom_toBottomOf="@id/whatsappIc"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/whatsappTwoCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_13sdp"
+        app:cardUseCompatPadding="true"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:elevation="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_2sdp"
+        app:layout_constraintStart_toEndOf="@id/whatsappOneCard"
+       app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/whatsappTxt"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/whatsappTwoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/whatsappIcc"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/whatsapp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/whatTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+91 8102228300"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/_5sdp"
+                app:layout_constraintStart_toEndOf="@id/whatsappIcc"
+                app:layout_constraintTop_toTopOf="@id/whatsappIcc"
+                app:layout_constraintBottom_toBottomOf="@id/whatsappIcc"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/followTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Follow Us :"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textColor="@color/colorPrimaryText"
+        app:layout_constraintStart_toStartOf="@id/officeAddressTxt"
+        app:layout_constraintTop_toBottomOf="@id/whatsappTwoCard"/>
+
+        <ImageView
+            android:id="@+id/googleIc"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/google"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toStartOf="@id/facebookIc"
+            app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/followTxt"/>
+
+
+        <ImageView
+            android:id="@+id/facebookIc"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="0dp"
+            android:src="@drawable/facebook"
+            app:layout_constraintEnd_toStartOf="@id/instaIc"
+           app:layout_constraintStart_toEndOf="@id/googleIc"
+            app:layout_constraintTop_toTopOf="@id/googleIc"
+            app:layout_constraintBottom_toBottomOf="@id/googleIc"/>
+
+        <ImageView
+            android:id="@+id/instaIc"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="0dp"
+            android:src="@drawable/instagram"
+            app:layout_constraintEnd_toStartOf="@id/youtubeIc"
+            app:layout_constraintStart_toEndOf="@id/facebookIc"
+            app:layout_constraintTop_toTopOf="@id/facebookIc"
+            app:layout_constraintBottom_toBottomOf="@id/facebookIc"/>
+
+        <ImageView
+            android:id="@+id/youtubeIc"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="0dp"
+            android:src="@drawable/youtube"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/instaIc"
+            app:layout_constraintTop_toTopOf="@id/instaIc"
+            app:layout_constraintBottom_toBottomOf="@id/instaIc"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

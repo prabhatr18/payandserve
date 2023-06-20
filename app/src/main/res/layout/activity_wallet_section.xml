@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center_vertical"
+            android:text="Load Wallet Request"
+            android:textColor="@color/textWhite"
+            android:textSize="@dimen/_12sdp" />
+
+        <ImageView
+            android:id="@+id/imgAllReport"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/icon_reports"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/_10sdp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginEnd="@dimen/_16sdp"/>
+    </RelativeLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/slideCon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:layout_margin="@dimen/_1sdp"
+        app:cardCornerRadius="1dp">
+
+        <com.synnapps.carouselview.CarouselView
+            android:id="@+id/rvSlider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_below="@id/top"
+            app:animateOnBoundary="false"
+            app:fillColor="@color/Gray"
+            app:pageColor="@color/white_card"
+            app:pageTransformInterval="700"
+            app:pageTransformer="zoom"
+            app:radius="4dp"
+            app:slideInterval="3000"
+            app:strokeColor="#FF777777"
+            app:strokeWidth="1dp" />
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <LinearLayout
+        android:id="@+id/walletSec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/slideCon"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible">
+
+        <include layout="@layout/home_wallet_items_row" />
+    </LinearLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sec3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/walletSec"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        app:cardBackgroundColor="@color/white_card"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_marginBottom="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/lbl1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/white_card"
+                android:fontFamily="@font/poppins"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_10sdp"
+                android:text="Wallet &amp; Settlement Request"
+                android:textAllCaps="false"
+                android:textColor="@color/textBlack" />
+
+            <LinearLayout
+                android:id="@+id/div1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lbl1"
+                android:layout_alignParentStart="true"
+                android:gravity="center_horizontal"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgAeps"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:padding="@dimen/_12sdp"
+                    android:src="@drawable/wallet_aeps_load_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/end_corner_radius_green_bg"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:text="AEPS"
+                    android:textSize="@dimen/_8sdp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textWhite" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_toEndOf="@+id/div1"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:id="@+id/div2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lbl1"
+                android:gravity="center_horizontal"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgMatm"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:padding="@dimen/_12sdp"
+                    android:src="@drawable/matm_load_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/end_corner_radius_green_bg"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:text="MATM"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/_8sdp"
+                    android:textColor="@color/textWhite" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_toEndOf="@+id/div2"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:id="@+id/div3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lbl1"
+                android:gravity="center_horizontal"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgWallet"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:padding="@dimen/_12sdp"
+                    android:src="@drawable/wallet_load_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/end_corner_radius_green_bg"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/_8sdp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:text="Wallet"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textWhite" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_toEndOf="@+id/div3"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:id="@+id/div4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lbl1"
+                android:gravity="center_horizontal"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgKuberWallet"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:padding="@dimen/_12sdp"
+                    android:src="@drawable/wallet_load_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/end_corner_radius_green_bg"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/_8sdp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:text="Kuber Wallet"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textWhite" />
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_110sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_5sdp"
+        android:alpha="0.1"
+        android:fitsSystemWindows="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/wallet_section" />
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_main_home">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_settings_user"
+            android:title="User Profile" />
+
+        <item
+            android:id="@+id/onBoarding"
+            android:icon="@drawable/pay_ltr"
+            android:title="Pay Latter" />
+
+        <item
+            android:id="@+id/member"
+            android:icon="@drawable/icon_add_member"
+            android:title="Member List" />
+
+        <item
+            android:id="@+id/notification"
+            android:icon="@drawable/ic_notification"
+            android:title="Update Notification" />
+
+        <item
+            android:id="@+id/bank"
+            android:icon="@drawable/ic_boy_face"
+            android:title="Account Details" />
+
+        <item
+            android:id="@+id/report"
+            android:icon="@drawable/wallet_report_icon"
+            android:title="All Report" />
+
+        <item
+            android:id="@+id/commission"
+            android:icon="@drawable/coin"
+            android:title="My Commission" />
+
+        <item
+            android:id="@+id/product"
+            android:icon="@drawable/shoppingcart_buy"
+            android:title="Buy Product" />
+
+       <!-- <item
+            android:id="@+id/cashback"
+            android:icon="@drawable/wallet"
+            android:title="Cashback &amp; Offers" />-->
+
+       <!-- <item
+            android:id="@+id/upgradePackage"
+            android:icon="@drawable/service_package"
+            android:title="Upgrade Your Package" />-->
+
+        <item
+            android:id="@+id/support_ticket"
+            android:icon="@drawable/support_ticket"
+            android:title="Support Ticket" />
+
+     <!--   <item
+            android:id="@+id/help_disk"
+            android:icon="@drawable/help_disk"
+            android:title="Help Disk" />
+-->
+        <item
+            android:id="@+id/tutorial"
+            android:icon="@drawable/ic_video"
+            android:title="Training Videos" />
+    <item
+            android:id="@+id/payLater"
+            android:icon="@drawable/ic_video"
+            android:title="Pay Later" />
+
+    </group>
+
+    <item android:title="@string/general">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/settings"
+                    android:icon="@drawable/ic_settings"
+                    android:title="Settings" />
+
+                <item
+                    android:id="@+id/settle"
+                    android:icon="@drawable/ic_settlement"
+                    android:title="Settlement" />
+
+                <item
+                    android:id="@+id/vcart"
+                    android:icon="@drawable/ic_vcard"
+                    android:title="VCard" />
+
+                <item
+                    android:id="@+id/rate_us"
+                    android:icon="@drawable/playstore"
+                    android:title="Rate Us" />
+
+                <item
+                    android:id="@+id/refer"
+                    android:icon="@drawable/ic_share"
+                    android:title="Refer" />
+
+                <item
+                    android:id="@+id/contact_us"
+                    android:icon="@drawable/contact_us"
+                    android:title="Contact Us" />
+
+                <item
+                    android:id="@+id/about_us"
+                    android:icon="@drawable/info"
+                    android:title="About Us" />
+
+                <item
+                    android:id="@+id/privacy"
+                    android:icon="@drawable/info"
+                    android:title="Privacy Policy" />
+            </group>
+        </menu>
+    </item>
+</menu>

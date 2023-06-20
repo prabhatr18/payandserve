@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.digital.payandserve",
+  "variantName": "processReleaseResources",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "versionCode": 18,
+      "versionName": "2.0",
+      "outputFile": "pay_serve_09jun2023_19-14_v18.apk"
+    }
+  ]
+}

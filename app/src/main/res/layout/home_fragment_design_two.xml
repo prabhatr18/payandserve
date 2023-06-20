@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/topHead"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/gradient_bg_home">
+
+        <TextView
+            android:id="@+id/imgLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:padding="@dimen/_2sdp"
+            android:text="@string/app_name"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/white"
+            android:src="@drawable/app_logo"/>
+
+        <ImageView
+            android:id="@+id/imgBell"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:padding="@dimen/_2sdp"
+            android:src="@drawable/ic_notification_bell"
+            app:tint="@color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/secNews"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@id/topHead"
+        android:background="@color/yellow"
+        android:gravity="center_vertical"
+        android:paddingBottom="3dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:src="@drawable/ic_announcement"
+            app:tint="@color/colorPrimary" />
+
+        <com.digital.payandserve.utill.MarqueeTextView
+            android:id="@+id/tvMarquee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_12sdp"
+            app:centerText="false"
+            app:edgeEffectColor="#fff"
+            app:edgeEffectEnabled="true"
+            app:edgeEffectWidth="20"
+            app:pauseDuration="2000" />
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/secNews">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_5sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:orientation="vertical">
+
+                    <include
+                        layout="@layout/home_wallet_items_row_second"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_2sdp">
+
+                    <com.synnapps.carouselview.CarouselView
+                        android:id="@+id/rvSlider"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_below="@id/top"
+                        app:animateOnBoundary="false"
+                        app:fillColor="@color/Gray"
+                        app:pageColor="@color/white_card"
+                        app:pageTransformInterval="700"
+                        app:pageTransformer="zoom"
+                        app:radius="4dp"
+                        app:indicatorMarginVertical="5dp"
+                        app:slideInterval="3000"
+                        app:indicatorGravity="bottom|end"
+                        app:strokeColor="#FF777777"
+                        app:strokeWidth="1dp" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvHome"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                app:cardBackgroundColor="@color/white_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:gravity="center_vertical"
+    android:layout_marginTop="@dimen/_5sdp">
+
+    <View
+        android:id="@+id/statusView"
+        android:layout_width="2dp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_alignParentEnd="true"
+        android:background="@color/red" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imgCard"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_margin="@dimen/_5sdp"
+        app:cardBackgroundColor="@color/white_card"
+        app:cardElevation="@dimen/_1sdp"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/_3sdp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imgProvider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_phone_receiver"
+            android:layout_margin="@dimen/_5sdp"/>
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_toEndOf="@id/imgCard"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_toStartOf="@+id/statusView"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_centerVertical="true"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:fontFamily="@font/poppins"
+            android:text="8889689856"
+            android:textColor="@color/textGray"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/TVAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:text="$4050.00"
+            android:textColor="@color/textGray"
+            android:textSize="@dimen/_9sdp" />
+    </LinearLayout>
+</RelativeLayout>

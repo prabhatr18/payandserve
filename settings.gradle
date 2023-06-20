@@ -1,0 +1,9 @@
+
+include ':app'
+include ':pdfcreator'
+include ':aeps_sdk_printer'
+include ':onboarding'
+include ':fingpaymicroatm-release'
+include ':aeps'
+rootProject.name='payandserve'
+

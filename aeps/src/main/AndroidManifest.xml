@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.payment.aeps">
+
+    <queries>
+        <package android:name="com.mantra.rdservice" />
+        <package android:name="com.acpl.registersdk" />
+        <package android:name="com.tatvik.bio.tmf20" />
+        <package android:name="com.secugen.rdservice" />
+        <package android:name="com.evolute.rdservice" />
+        <package android:name="com.scl.rdservice" />
+
+        <intent>
+            <action android:name="android.intent.action.SEND" />
+            <data android:mimeType="image/jpeg" />
+        </intent>
+    </queries>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+
+    <application
+        android:theme="@style/AppTheme.NoActionBar"
+        android:requestLegacyExternalStorage="true">
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".AepsDashboard"
+            android:label="@string/title_activity_aeps_dashboard" />
+        <uses-library android:name ="org.apache.http.legacy" android:required ="false"/>
+
+        <activity android:name=".activity.CashWithdraw" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.BankList" android:screenOrientation="portrait"/>
+        <activity android:name=".moduleprinter.ModuleInvoice" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.CashDeposite" />
+        <activity android:name=".activity.OTPVaidate" />
+        <activity android:name=".activity.EKYCOTPVaidate" />
+        <activity android:name=".activity.EKYCRegister" />
+        <activity android:name=".fingpay_microatm.FingPayMicroAtm" />
+        <activity android:name=".permission.PermissionsActivity" />
+        <activity android:name=".fingpay_microatm.printer.Invoice" />
+        <activity android:name=".fingpay_microatm.printer.MiniStatementInvoice" />
+        <activity android:name=".onboard.auth.Onboard" />
+        <activity android:name=".activity.StateList" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <provider
+            android:name=".util.ProviderAlternate"
+            android:authorities="${applicationId}.files"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"
+                tools:replace="android:resource"/>
+        </provider>
+    </application>
+
+</manifest>

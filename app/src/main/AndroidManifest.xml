@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.digital.payandserve">
+
+    <queries>
+        <package android:name="org.egram.microatm" />
+
+        <intent>
+            <action android:name="android.intent.action.SEND" />
+
+            <data android:mimeType="image/jpeg" />
+        </intent>
+    </queries>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.hardware.location.gps" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:theme"
+        tools:targetApi="m">
+        <activity
+            android:name=".views.MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".newservice.InitiateLoanWebviewActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".newservice.GetPlanActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".newservice.PayLaterRegistrationActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity android:name=".views.certificate.CertificateActivity" />
+        <activity android:name=".views.DashBoardActivity" />
+        <activity android:name=".views.vcart.VCartActivity" />
+        <activity android:name=".views.walletsection.ChangeUpdateAccountActivity" />
+        <activity android:name=".views.terms_conditon.TermsConditonsActivity" />
+        <activity android:name=".intro_slider.IntroSliderActivity" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name=".views.rateus.RateUsActivity" />
+        <activity android:name=".views.about_us.AboutUsActivity" />
+        <activity android:name=".online_service.WebViewActivity" />
+        <activity android:name=".online_service.OnlineServicesActivity" />
+        <activity android:name=".contact_us.ContactUsActivity" />
+        <activity android:name=".customer_care.CustomerCareActivity" />
+        <activity
+            android:name=".views.reports.AEPSTransaction"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.BillReport"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.settings.Settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.ProfilePage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.AllServices"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.invoice.ReportInvoice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.reports.FilterView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.reports.AEPSFundRequest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.reports.BillRechargeTransaction"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.reports.DMTTransactionReport"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.reports.AllReports"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.contact.AndroidContactList"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".permission.PermissionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.operator.OperatorList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.billpayment.MobileRechargeAmountInput"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.browseplan.ViewPlans"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.amirarcane.lockscreen.activity.EnterPinActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".views.billpayment.RechargeAndBillPayment"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.billpayment.DTHAmountInput"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.billpayment.ShowBillFetched"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.walletsection.WalletOptions"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.walletsection.AepsMatmWalletReqest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.walletsection.WalletFundRequest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.moneytransfer.DMTSearchAccount"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.moneytransfer.BenDetails"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.otpview.OTPValidate"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.moneytransfer.AddBeneficiary"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.moneytransfer.DMTTransaction"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.mhagram_aeps_matm.HandlerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.payment_gateway.GatewayStatus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.auth.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.otpview.OTPValidateAuth"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.SplashScreen"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.BankAccountPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.reports.MainWalletFundReqStatement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.invoice.MatmInvoice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".network.SessionExpired"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.settings.LockSettings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.allservices_search.AllServicesSearch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.reports.status.CheckStatus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.otpview.OTPValidateForgetPassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.mhagram_aeps_matm.kyc.KYCActivityFormOne"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.mhagram_aeps_matm.kyc.KYCActivityFormTwo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.settings.WebViewPAge"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.upi.ShowQR"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.upi.UPIForm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.reports.UpiTransactionReport"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.reports.status.UPICheckStatus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.reports.MATMFundRequest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.invoice.PdfManager2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".views.invoice.PdfViewerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".views.member.AddMember" />
+        <activity android:name=".views.member.MemberListAll" />
+        <activity android:name=".views.otpview.PasswordReset" />
+        <activity android:name=".views.otpview.OTPPinReset" />
+        <activity android:name=".posprinter.PosPrinter" />
+        <activity android:name=".views.reports.AepsWalletStatement" />
+        <activity android:name=".views.reports.WalletStatement" />
+        <activity android:name=".views.tutorial.TutorialActivity" />
+        <activity android:name=".views.commission.CommissionList" />
+        <activity android:name=".views.commission.CommissionDataList" />
+        <activity android:name=".views.select_state_district.SearchWithListActivity" />
+        <activity android:name=".views.on_boarding.BcStatusActivity" />
+        <activity android:name=".views.on_boarding.OnBoardingActivity" />
+        <activity android:name=".views.on_boarding.UploadDocumentActivity" />
+        <activity android:name=".views.auth.Signup" />
+        <activity android:name=".views.profile_update.UploadProfilePic" />
+        <activity android:name=".views.ourproducts.BuyProductsActivity" />
+        <activity android:name=".views.reports.BuyProductsHistory" />
+        <activity android:name=".views.notification.NotificationsListing" />
+        <activity android:name=".customer_care.AppCompain" />
+        <activity android:name=".views.referall.ReferralActivity" />
+        <activity android:name=".views.reports.SupporTicektHistory" />
+        <activity android:name=".firebase.NotificationDialog" />
+        <activity android:name=".customer_care.SelectSubjectActivity" />
+        <activity android:name=".views.reports.IdStockReport" />
+        <activity android:name=".views.reports.CashbackStatmentReport" />
+        <activity android:name=".views.reports.AdhaarPayStatment" />
+        <activity android:name=".views.paylater.PayLaterActivity" />
+        <activity android:name=".views.paylater.PaylaterPlansActivity" />
+        <activity android:name=".views.dmt.CompactReportInvoice" />
+        <activity android:name=".views.dmt.PDMTTransaction" />
+        <activity android:name=".views.dmt.PdmtBenilist" />
+        <activity android:name=".views.dmt.PGSearchAccount" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCHeAJBmKB96xYiYubA2fAIeIgk6VlMVQA" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="ocr" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.files"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"
+                tools:replace="android:resource" />
+
+        </provider>
+
+        <service
+            android:name=".firebase.MessageReceiveService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/abc_vector_test" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/purple_200" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+    </application>
+
+</manifest>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_62sdp"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/_2sdp">
+    <LinearLayout
+        android:id="@+id/secAes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@drawable/semi_black_cir"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/ic_fingerprint"
+            app:tint="@color/imageWhite" />
+
+        <com.digital.payandserve.customfonts.MyTextView_Montserrat_Medium
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:gravity="center"
+            android:text="AEPS"
+            android:textColor="@color/textWhite"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_light">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_card"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/imgCard"
+                    android:layout_width="@dimen/_36sdp"
+                    android:layout_height="@dimen/_36sdp"
+                    android:layout_centerVertical="true"
+                    app:cardBackgroundColor="@color/white_card"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_2sdp">
+
+                    <ImageView
+                        android:id="@+id/imgProvider"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:src="@drawable/ic_smartphone" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/lbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/imgCard"
+                    android:fontFamily="@font/poppins"
+                    android:text="Browse Plan"
+                    android:textColor="@color/textGray"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/forPlan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lbl"
+                    android:layout_marginLeft="@dimen/_1sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/imgCard"
+                    android:fontFamily="@font/poppins"
+                    android:text="Idea Prepaid"
+                    android:textColor="@color/textGray"
+                    android:textSize="@dimen/_10sdp" />
+
+                <ImageView
+                    android:id="@+id/imgClose"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/close_icon"
+                    app:tint="@color/textGray" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@id/icBack"
+                android:background="@drawable/round_gray_bg"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center_vertical"
+                android:hint="Search for a Plan"
+                android:paddingLeft="10dp"
+                android:paddingTop="2dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/textGray"
+                android:textColorHint="@color/textHintGray"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                app:drawableStartCompat="@drawable/ic_search_gray" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:theme="@style/TabLayout"
+                app:tabMode="scrollable"
+                app:tabTextColor="@color/imgGray"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:background="@color/bg_color_light"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/planList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/disableCon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#6A000000"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/noData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:background="@color/white_card"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/tvMsg"
+                android:visibility="visible"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="false"
+                app:lottie_rawRes="@raw/record_not_available" />
+
+            <TextView
+                android:id="@+id/tvMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/poppins_light"
+                android:padding="@dimen/_5sdp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <!-- Adding bottom sheet after main content -->
+    <include layout="@layout/plan_view_bottom_sheet" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

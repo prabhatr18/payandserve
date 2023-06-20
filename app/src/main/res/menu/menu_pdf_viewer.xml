@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuPrintPdf"
+        android:icon="@drawable/print_new_icon"
+        android:title="@string/text_print"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menuSharePdf"
+        android:icon="@drawable/share_new_icon"
+        android:title="@string/text_share"
+        app:showAsAction="never"/>
+</menu>

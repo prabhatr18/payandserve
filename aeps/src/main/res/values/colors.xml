@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0297D9</color>
+    <color name="colorPrimaryTrans">#25E12027</color>
+    <color name="colorPrimaryDark">#0297D9</color>
+    <color name="colorAccent">#0297D9</color>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="Gray">#EBEBEB</color>
+    <color name="GrayD">#BFBFBF</color>
+    <color name="GrayLight">#FAFAFA</color>
+    <color name="black">#000000</color>
+    <color name="bg_color">#FBFBFB</color>
+
+    <color name="green">#4CAF50</color>
+
+    <!--    <color name="colorPrimary">#E96A5F</color>-->
+    <!--    <color name="colorPrimaryDark">#D65147</color>-->
+
+    <!-- Bm pay logo-->
+    <!--    <color name="colorPrimary">#771E18</color>-->
+    <!--    <color name="colorPrimaryTrans">#27771E18</color>-->
+
+    <color name="matGreen">#00897B</color>
+    <color name="tint_color">#59C4F4</color>
+
+    <!--    webTalk Color F10629-->
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutContactNumber"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_20sdp"
+    android:layout_marginRight="@dimen/_20sdp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="#00AAAAAA"
+        android:singleLine="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:paddingStart="@dimen/_1sdp"
+        android:textColor="@color/textBlack"
+        android:textSize="@dimen/_16sdp"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/tvValidation"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_gravity="start"
+        android:background="@color/textRed"/>
+
+    <TextView
+        android:id="@+id/tvLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:textColor="@color/textRed"
+        android:textSize="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:fontFamily="@font/poppins"
+        android:text="Consumer Number"/>
+
+</LinearLayout>

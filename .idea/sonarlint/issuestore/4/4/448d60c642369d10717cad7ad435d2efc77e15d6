@@ -1,0 +1,93 @@
+
+P
+java:S11189":Add a private constructor to hide the implicit public one.(Å•µâ
+D
+java:S1172I".Remove this unused method parameter "context".(ç¹ Æ
+I
+java:S1172r".Remove this unused method parameter "context".(ü‹©òúÿÿÿÿ
+W	java:S125"<This block of commented-out lines of code should be removed.(âËÃùÿÿÿÿ
+W	java:S125°"<This block of commented-out lines of code should be removed.(âËÃùÿÿÿÿ
+K
+java:S1172é"/Remove this unused method parameter "activity".(Ãëß„ûÿÿÿÿ
+E
+java:S1172ö"/Remove this unused method parameter "activity".(âàĞS
+c	java:S100ƒ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Óƒ‹U
+E
+java:S1172ƒ"/Remove this unused method parameter "activity".(Óƒ‹U
+K
+java:S1172‘"/Remove this unused method parameter "activity".(’Ñ°üÿÿÿÿ
+K
+java:S1172"/Remove this unused method parameter "activity".(†±ÌÁşÿÿÿÿ
+K
+java:S1172«"/Remove this unused method parameter "activity".(ˆ—Õ³ûÿÿÿÿ
+F
+java:S1172¸"/Remove this unused method parameter "activity".(È±©Î
+K
+java:S1172Å"/Remove this unused method parameter "activity".(à¸¯Šÿÿÿÿÿ
+F
+java:S1172Ò"/Remove this unused method parameter "activity".(¶óÃÇ
+F
+java:S1172è"/Remove this unused method parameter "activity".(¡ûİÑ
+K
+java:S1172õ"/Remove this unused method parameter "activity".(²Öì»ùÿÿÿÿ
+K
+java:S1172‚"/Remove this unused method parameter "activity".(ØÔóùÿÿÿÿ
+F
+java:S1172"/Remove this unused method parameter "activity".(í•–Ù
+F
+java:S1172Ò"/Remove this unused method parameter "activity".(äŸÌˆ
+F
+java:S1172ß"/Remove this unused method parameter "activity".(µ­Á
+F
+java:S1172ì"/Remove this unused method parameter "activity".(©Ñ¹¯
+F
+java:S1172”"/Remove this unused method parameter "activity".(»‹ó³
+F
+java:S1172®"/Remove this unused method parameter "activity".(ë£áö
+F
+java:S1172»"/Remove this unused method parameter "activity".( »ßî
+F
+java:S1172È"/Remove this unused method parameter "activity".(çÂàÑ
+n
+java:S3776Õ"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(œ“¶ùÿÿÿÿ
+J
+java:S1172˜".Remove this unused method parameter "context".(è®ışÿÿÿÿ
+n
+java:S3776×"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(ı³“‚úÿÿÿÿ
+w
+java:S3923á"[Remove this conditional structure or edit its code blocks so that they're not all the same.(ä¿âıÿÿÿÿ
+a
+java:S1192E"KDefine a constant instead of duplicating this literal "Trans Type" 4 times.(‡†ûÌ
+c
+java:S1192N"HDefine a constant instead of duplicating this literal "Product" 5 times.(‚¦Äìşÿÿÿÿ
+b
+java:S1192Ÿ"KDefine a constant instead of duplicating this literal "statuscode" 4 times.(¯ô”ÿ
+^
+java:S1192F"HDefine a constant instead of duplicating this literal "Status" 10 times.(‰¢½ƒ
+d
+java:S1192õ"HDefine a constant instead of duplicating this literal "profile" 3 times.(øµªıøÿÿÿÿ
+a
+java:S1192="FDefine a constant instead of duplicating this literal "Txnid" 3 times.(ç™‰ßùÿÿÿÿ
+^
+java:S1192"GDefine a constant instead of duplicating this literal "status" 6 times.(ãÙğ
+b
+java:S1192A"GDefine a constant instead of duplicating this literal "Amount" 9 times.(÷æŠùÿÿÿÿ
+]
+java:S1192?"GDefine a constant instead of duplicating this literal "Mobile" 7 times.(å˜‘Æ
+b
+java:S1192"GDefine a constant instead of duplicating this literal "R Type" 3 times.(í¯¼‚ùÿÿÿÿ
+^
+java:S1192C"HDefine a constant instead of duplicating this literal "Balance" 6 times.(Î¿‚Ê
+b
+java:S1192M"GDefine a constant instead of duplicating this literal "Number" 4 times.(µ×‚½ÿÿÿÿÿ
+b
+java:S1192B"GDefine a constant instead of duplicating this literal "Charge" 4 times.(ò¥Á›ûÿÿÿÿ
+]
+java:S1192u"GDefine a constant instead of duplicating this literal "Txn Id" 4 times.(ı½äô
+Q
+java:S1141œ"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+g	java:S117î"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“úô•
+l	java:S117ï"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂÂ¶üÿÿÿÿ
+l	java:S117ğ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰À×ºüÿÿÿÿ
+g	java:S117ñ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼ƒ…
+f	java:S117ò"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­è®

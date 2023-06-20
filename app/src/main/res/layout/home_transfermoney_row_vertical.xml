@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_55sdp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/colorPrimary"
+    android:baselineAligned="false"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/_5sdp"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:id="@+id/secAeps"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@drawable/semi_black_cir"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/ic_fingerprint"
+            app:tint="@color/imageWhite" />
+
+        <com.digital.payandserve.customfonts.MyTextView_Montserrat_Medium
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:gravity="center"
+            android:text="@string/aeps"
+            android:textColor="@color/textWhite"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/secMatm"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@drawable/semi_black_cir"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/ic_printing_icon"
+            app:tint="@color/imageWhite" />
+
+        <com.digital.payandserve.customfonts.MyTextView_Montserrat_Medium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:gravity="center"
+            android:text="MATM"
+            android:textColor="@color/textWhite"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/secDMT"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@drawable/semi_black_cir"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/dmt_new" />
+
+        <com.digital.payandserve.customfonts.MyTextView_Montserrat_Medium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:gravity="center"
+            android:text="@string/dmt"
+            android:textColor="@color/textWhite"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/secPhone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@drawable/semi_black_cir"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/ic_phone_new"
+            app:tint="@color/imageWhite" />
+
+        <com.digital.payandserve.customfonts.MyTextView_Montserrat_Medium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:gravity="center"
+            android:text="Phone"
+            android:textColor="@color/textWhite"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secDTH"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@drawable/semi_black_cir"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/ic_satellite_dish"
+            app:tint="@color/imageWhite"/>
+
+        <com.digital.payandserve.customfonts.MyTextView_Montserrat_Medium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:gravity="center"
+            android:text="DTH"
+            android:textColor="@color/textWhite"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

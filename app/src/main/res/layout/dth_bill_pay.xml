@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_card">
+
+    <ImageView
+        android:id="@+id/icBack"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:src="@drawable/ic_left_arrow"
+        app:tint="@color/imgGray" />
+
+    <TextView
+        android:id="@+id/tvMobileCarrier"
+        android:layout_toLeftOf="@+id/imgCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/_42sdp"
+        android:layout_below="@id/icBack"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:fontFamily="@font/baloo"
+        android:textSize="@dimen/_18sdp"
+        android:textColor="@color/textBlack"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imgCard"
+        android:layout_width="@dimen/_42sdp"
+        android:layout_height="@dimen/_42sdp"
+        android:layout_below="@id/icBack"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        app:cardBackgroundColor="@color/white_card"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_3sdp">
+        <ImageView
+            android:id="@+id/imgProvider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5sdp"/>
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/etCustomerId"
+        android:layout_below="@+id/tvMobileCarrier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="#00AAAAAA"
+        android:digits="1234567890"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Customer Id"
+        android:inputType="phone"
+        android:maxLength="15"
+        android:textColor="@color/textBlack"
+        android:textColorHint="@color/textHintGray"
+        android:textSize="@dimen/_18sdp"
+        />
+
+    <TextView
+        android:id="@+id/lbl2"
+        android:layout_below="@id/div1"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="@color/textGray"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:text="Your service id is located on tour tv menu, on the bottom of the screen"/>
+
+    <View
+        android:id="@+id/div1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/etCustomerId"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@color/textRed" />
+
+    <RelativeLayout
+        android:id="@+id/etNumberInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl2"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        android:visibility="visible"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00AAAAAA"
+            android:fontFamily="@font/poppins_medium"
+            android:maxLength="4"
+            android:text="@string/rupee"
+            android:textColor="@color/textGray"
+            android:textColorHint="@color/textHintGray"
+            android:textSize="@dimen/_16sdp" />
+
+        <EditText
+            android:id="@+id/etAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/lbl"
+            android:background="#00AAAAAA"
+            android:digits="1234567890"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Amount"
+            android:inputType="phone"
+            android:maxLength="8"
+            android:textColor="@color/textBlack"
+            android:textColorHint="@color/textHintGray"
+            android:textSize="@dimen/_16sdp" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvPlans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:src="@drawable/ic_contact_book"
+            android:text="Browse\nPlans"
+            android:textAllCaps="true"
+            android:textColor="@color/textRed"
+            android:textSize="@dimen/_8sdp"
+            app:tint="@color/textRed" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/div"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/etNumberInput"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@color/textRed" />
+
+    <TextView
+        android:id="@+id/lblAmount"
+        android:layout_below="@id/div"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:text="Please input bill amount"
+        android:textAllCaps="false"
+        android:textColor="@color/textGray"
+        android:textSize="@dimen/_10sdp"
+        app:tint="@color/textRed" />
+
+    <EditText
+        android:id="@+id/etTPin"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblAmount"
+        android:background="#00AAAAAA"
+        android:digits="1234567890"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center_vertical"
+        android:letterSpacing="0.5"
+        android:inputType="numberPassword"
+        android:maxLength="8"
+        android:textColor="@color/textBlack"
+        android:textColorHint="@color/textHintGray"
+        android:textSize="@dimen/_16sdp" />
+
+    <View
+        android:id="@+id/lbl3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/etTPin"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@color/textRed" />
+
+    <TextView
+        android:id="@+id/lbl4"
+        android:layout_below="@id/lbl3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:text="TPin is required"
+        android:textAllCaps="true"
+        android:textColor="@color/textGray"
+        android:textSize="@dimen/_10sdp"
+        app:tint="@color/textRed" />
+
+    <TextView
+        android:id="@+id/tvGenPin"
+        android:layout_below="@id/lbl4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:text="@string/generate_tpin"
+        android:textAllCaps="false"
+        android:textColor="@color/green"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:textSize="@dimen/_12sdp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnProceed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/primary_border_red"
+        android:fontFamily="@font/poppins_light"
+        android:text="Proceed"
+        android:textAllCaps="false"
+        android:textColor="@color/textWhite"
+        android:textSize="@dimen/_16sdp" />
+</RelativeLayout>

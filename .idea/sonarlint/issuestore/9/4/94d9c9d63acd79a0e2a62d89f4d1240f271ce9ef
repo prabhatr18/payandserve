@@ -1,0 +1,101 @@
+
+j
+java:S3008""TRename this field "UPI_IMAGE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Øˆù‡
+o
+java:S30080"ZRename this field "GLOBAL_POSITION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»½°!
+r
+java:S30082"WRename this field "INVOICE_DATA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ù­‡´şÿÿÿÿ
+v
+java:S30083"[Rename this field "REPORT_PDF_MODEL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Î™¯”üÿÿÿÿ
+r
+java:S30084"\Rename this field "IS_RELOAD_REQUEST" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†¤Ù¥
+p
+java:S30085"URename this field "BILL_MODEL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ÷šØÿÿÿÿÿ
+m
+java:S30086"RRename this field "DMT_RID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ç¤—ùÿÿÿÿ
+u
+java:S3008d"_Rename this field "BILL_PAYMENT_VERSION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€ˆòÉ
+p
+java:S3008e"[Rename this field "AUTO_LOGOUT_TIME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨Éè0
+j
+java:S3008g"TRename this field "MOBILE_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎÅ÷ó
+3
+java:S2386"Make this member "protected".(êûãø
+8
+java:S2386"Make this member "protected".(›Âäóşÿÿÿÿ
+U
+java:S1118":Add a private constructor to hide the implicit public one.(“³±ûÿÿÿÿ
+J
+java:S2885%"/Make "SIMPLE_DATE_FORMAT" an instance variable.(ò¬Çîúÿÿÿÿ
+K
+java:S2885'"0Make "SHOWING_DATE_FORMAT" an instance variable.(í—Í¯ÿÿÿÿÿ
+J
+java:S2885)"/Make "COMMON_DATE_FORMAT" an instance variable.(‚ÈÖİùÿÿÿÿ
+C
+java:S2885+"-Make "YEAR_DATE_FORMAT" an instance variable.(®×ûí
+I
+java:S2885-".Make "MONTH_DATE_FORMAT" an instance variable.(Œ Õıÿÿÿÿ
+E
+java:S2885/"/Make "REPORT_DATE_FORMAT" an instance variable.(°¬ğÆ
+P
+java:S11188":Add a private constructor to hide the implicit public one.(¾‚Éå
+P
+java:S1118i":Add a private constructor to hide the implicit public one.(ÂÆôÛ
+ˆ
+java:S1319"rThe type of "commissionDataList" should be an interface such as "List" rather than the implementation "ArrayList".(İü“Ù
+t
+java:S1104"^Make commissionDataList a static final constant or non-public and provide accessors if needed.(İü“Ù
+h
+java:S1104"RMake images a static final constant or non-public and provide accessors if needed.(êûãø
+s
+java:S1104"XMake imagesBottom a static final constant or non-public and provide accessors if needed.(›Âäóşÿÿÿÿ
+k
+java:S1104""UMake UPI_IMAGE a static final constant or non-public and provide accessors if needed.(Øˆù‡
+p
+java:S11040"[Make GLOBAL_POSITION a static final constant or non-public and provide accessors if needed.(»½°!
+s
+java:S11042"XMake INVOICE_DATA a static final constant or non-public and provide accessors if needed.(ù­‡´şÿÿÿÿ
+w
+java:S11043"\Make REPORT_PDF_MODEL a static final constant or non-public and provide accessors if needed.(Î™¯”üÿÿÿÿ
+s
+java:S11044"]Make IS_RELOAD_REQUEST a static final constant or non-public and provide accessors if needed.(†¤Ù¥
+q
+java:S11045"VMake BILL_MODEL a static final constant or non-public and provide accessors if needed.( ÷šØÿÿÿÿÿ
+n
+java:S11046"SMake DMT_RID a static final constant or non-public and provide accessors if needed.(Ç¤—ùÿÿÿÿ
+v
+java:S1104d"`Make BILL_PAYMENT_VERSION a static final constant or non-public and provide accessors if needed.(€ˆòÉ
+q
+java:S1104e"\Make AUTO_LOGOUT_TIME a static final constant or non-public and provide accessors if needed.(¨Éè0
+o
+java:S1104f"YMake isDemoNewsSec a static final constant or non-public and provide accessors if needed.(ÜãŞÏ
+k
+java:S1104g"UMake MOBILE_ID a static final constant or non-public and provide accessors if needed.(ÎÅ÷ó
+N
+java:S1444"8Make this "public static commissionDataList" field final(İü“Ù
+B
+java:S1444",Make this "public static images" field final(êûãø
+M
+java:S1444"2Make this "public static imagesBottom" field final(›Âäóşÿÿÿÿ
+E
+java:S1444""/Make this "public static UPI_IMAGE" field final(Øˆù‡
+J
+java:S14440"5Make this "public static GLOBAL_POSITION" field final(»½°!
+M
+java:S14442"2Make this "public static INVOICE_DATA" field final(ù­‡´şÿÿÿÿ
+Q
+java:S14443"6Make this "public static REPORT_PDF_MODEL" field final(Î™¯”üÿÿÿÿ
+M
+java:S14444"7Make this "public static IS_RELOAD_REQUEST" field final(†¤Ù¥
+K
+java:S14445"0Make this "public static BILL_MODEL" field final( ÷šØÿÿÿÿÿ
+H
+java:S14446"-Make this "public static DMT_RID" field final(Ç¤—ùÿÿÿÿ
+P
+java:S1444d":Make this "public static BILL_PAYMENT_VERSION" field final(€ˆòÉ
+K
+java:S1444e"6Make this "public static AUTO_LOGOUT_TIME" field final(¨Éè0
+I
+java:S1444f"3Make this "public static isDemoNewsSec" field final(ÜãŞÏ
+E
+java:S1444g"/Make this "public static MOBILE_ID" field final(ÎÅ÷ó

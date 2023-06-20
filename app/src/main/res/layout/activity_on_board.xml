@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".newservice.PayLaterRegistrationActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/onBoardBackBtn"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:src="@drawable/back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Fill Details"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/onBoardBackBtn"
+            app:layout_constraintStart_toEndOf="@id/onBoardBackBtn"
+            app:layout_constraintTop_toTopOf="@id/onBoardBackBtn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fNameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:text="First Name*"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/fNameEt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/sign_edit_bg"
+                android:gravity="center_vertical"
+                android:inputType="text"
+                android:paddingStart="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/mNameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/open_sans"
+                android:text="Middle Name"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fNameEt" />
+
+            <EditText
+                android:id="@+id/mNameEt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/sign_edit_bg"
+                android:gravity="center_vertical"
+                android:inputType="text"
+                android:paddingStart="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/lNameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/open_sans"
+                android:text="Last Name"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/lNameEt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/sign_edit_bg"
+                android:gravity="center_vertical"
+                android:inputType="text"
+                android:paddingStart="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/open_sans"
+                android:text="Gender*"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/genderSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/sign_edit_bg"
+                android:paddingStart="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/emailTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/open_sans"
+                android:text="E-mail*"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/emailEt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/sign_edit_bg"
+                android:gravity="center_vertical"
+                android:inputType="textEmailAddress"
+                android:paddingStart="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/phoneOneTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/open_sans"
+                android:text="Mobile Number*"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/mobileNumberEt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/sign_edit_bg"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingStart="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/open_sans"
+                android:text="DOB*"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/dobTv"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/sign_edit_bg"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingStart="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/open_sans"
+                android:text="State*"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/stateTv"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:gravity="center_vertical"
+                android:inputType="none"
+                android:paddingStart="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/open_sans"
+                android:text="District*"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/districtTv"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/sign_edit_bg"
+                android:gravity="center_vertical"
+                android:inputType="none"
+                android:paddingStart="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/addressTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/open_sans"
+                android:text="Address*"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/addressEt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/sign_edit_bg"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_8sdp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="RtlSymmetry" />
+
+
+            <Button
+                android:id="@+id/nextBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:background="@drawable/button_bg"
+                android:text="Next" />
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

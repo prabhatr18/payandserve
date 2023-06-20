@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ratingImg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_130sdp"
+        android:src="@drawable/rate_us"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/rateTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rate your experience"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="@dimen/_17sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ratingImg"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ratingTagLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Help us to improve our experience\nby rating us"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_11sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rateTxt"/>
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="3.5"
+        android:layout_marginTop="@dimen/_13sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ratingTagLine"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/reviewEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/_120sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:hint="Write your review..."
+        android:gravity="top"
+        android:padding="@dimen/_10sdp"
+        android:textSize="@dimen/_12sdp"
+        android:background="@drawable/rating_bar_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ratingBar"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="@drawable/border_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8.5"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="10dp"
+                android:text="OTP Login"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imgClose"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1.5"
+                android:src="@drawable/flash_close_icon" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#48C2F4C3"
+            android:paddingStart="@dimen/text_size16"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="@dimen/text_size16"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:text="Please enter your old otp"
+            android:textColor="@color/green" />
+
+        <EditText
+            android:id="@+id/otp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvMsg"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_edit"
+            android:digits="1234567890"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="8"
+            android:textColor="@color/textGray"
+            android:textSize="30sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnResend"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_below="@id/otp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:background="@drawable/bg_bt_pressed"
+            android:gravity="center"
+            android:text="Resend Otp"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/otp_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:ems="7"
+            android:background="@drawable/bg_bt_pressed"
+            android:fontFamily="@font/poppins"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

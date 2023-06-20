@@ -1,0 +1,5 @@
+<resources>
+    <string name="title_activity_aeps_dashboard">AepsDashboard</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="please_choose_you_device">From top device selection menu you can change your device after selection</string>
+</resources>

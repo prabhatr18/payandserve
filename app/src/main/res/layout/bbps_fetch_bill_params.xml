@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_light"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_toLeftOf="@id/imgCard"
+        android:fontFamily="@font/poppins"
+        android:minHeight="@dimen/_42sdp"
+        android:textColor="@color/textGray"
+        android:textSize="@dimen/_14sdp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imgCard"
+        android:layout_width="@dimen/_42sdp"
+        android:layout_height="@dimen/_42sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        app:cardBackgroundColor="@color/white_card"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_3sdp">
+
+        <ImageView
+            android:id="@+id/imgProvider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:src="@drawable/na_icon" />
+    </androidx.cardview.widget.CardView>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnProceed"
+        android:layout_below="@id/title"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:background="@color/white_card"
+        android:descendantFocusability="beforeDescendants"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:paddingLeft="@dimen/_16sdp"
+        android:paddingTop="@dimen/_20sdp"
+        android:paddingRight="@dimen/_16sdp"
+        android:scrollbars="none" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnProceed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/primary_border_red"
+        android:fontFamily="@font/poppins_light"
+        android:text="Validate"
+        android:textAllCaps="false"
+        android:textColor="@color/textWhite"
+        android:textSize="@dimen/_16sdp" />
+
+    <ProgressBar
+        android:id="@+id/loader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/_5sdp"
+        android:visibility="gone" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/noData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/white_card"
+        app:cardElevation="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white_card"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/tvMsg"
+                android:visibility="visible"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="false"
+                app:lottie_rawRes="@raw/record_not_available" />
+
+            <TextView
+                android:id="@+id/tvMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:fontFamily="@font/fredoka_one"
+                android:paddingBottom="@dimen/_10sdp"
+                android:textSize="@dimen/_10sdp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

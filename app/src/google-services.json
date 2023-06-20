@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "908914580634",
+    "project_id": "mhagramandroidapps",
+    "storage_bucket": "mhagramandroidapps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:908914580634:android:a57c67e32772c492b81323",
+        "android_client_info": {
+          "package_name": "com.digital.payandserve"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "908914580634-9mhh8iunfmpdrimu173bvklvlvbohihp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB5_nrz2wpZn0rdiG9JAIT3QuGPJd7fPo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "908914580634-9mhh8iunfmpdrimu173bvklvlvbohihp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:908914580634:android:bae3c177b972be01b81323",
+        "android_client_info": {
+          "package_name": "com.payment.jmbpaywallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "908914580634-9mhh8iunfmpdrimu173bvklvlvbohihp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB5_nrz2wpZn0rdiG9JAIT3QuGPJd7fPo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "908914580634-9mhh8iunfmpdrimu173bvklvlvbohihp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

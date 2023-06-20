@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/transaction_toolbar" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11.7dp"
+                android:layout_marginTop="11.7dp"
+                android:layout_marginEnd="11.7dp"
+                android:layout_marginBottom="37dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.digital.payandserve.customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16.7dp"
+                        android:layout_marginTop="8.7dp"
+                        android:text="@string/_23jun"
+                        android:textColor="@color/textGray"
+                        android:textSize="11.7sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginTop="7.3dp"
+                        android:layout_marginBottom="10.7dp"
+                        android:layerType="software"
+                        android:src="@drawable/dashed_line" />
+
+                    <com.digital.payandserve.customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16.3dp"
+                        android:text="@string/trans_amount"
+                        android:textColor="@color/textGray"
+                        android:textSize="11.7sp" />
+
+                    <com.digital.payandserve.customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16.7dp"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/_121"
+                        android:textColor="@color/textBlack"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="6.7dp"
+                        android:layout_marginBottom="11.7dp"
+                        android:background="@color/view_gray" />
+
+                    <com.digital.payandserve.customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16.3dp"
+                        android:text="@string/trans_id"
+                        android:textColor="@color/textGray"
+                        android:textSize="11.7sp" />
+
+                    <com.digital.payandserve.customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16.7dp"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/op42323"
+                        android:textColor="@color/textBlack"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="6.7dp"
+                        android:layout_marginBottom="11.7dp"
+                        android:background="@color/view_gray" />
+
+
+                    <com.digital.payandserve.customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16.3dp"
+                        android:text="@string/trans_description"
+                        android:textColor="@color/textGray"
+                        android:textSize="11.7sp" />
+
+                    <com.digital.payandserve.customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16.7dp"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/prcr"
+                        android:textColor="@color/textBlack"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="6.7dp"
+                        android:layout_marginBottom="11.7dp"
+                        android:background="@color/view_gray" />
+
+
+                    <com.digital.payandserve.customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16.3dp"
+                        android:text="@string/account"
+                        android:textColor="@color/textGray"
+                        android:textSize="11.7sp" />
+
+                    <com.digital.payandserve.customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16.7dp"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/xxxx"
+                        android:textColor="@color/textBlack"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="6.7dp"
+                        android:layout_marginBottom="44.7dp"
+                        android:background="@color/view_gray" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_marginEnd="26.3dp"
+                android:elevation="4dp"
+                android:src="@drawable/money_symbol" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/remarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:elevation="1dp">
+
+        <com.digital.payandserve.customfonts.MyTextView_Roboto_Regular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16.7dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:text="@string/add_remarks"
+            android:textColor="@color/textGray"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

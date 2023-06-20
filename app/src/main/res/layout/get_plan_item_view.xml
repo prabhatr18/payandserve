@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginRight="@dimen/_4sdp"
+        app:cardCornerRadius="@dimen/_4sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight=".9"
+                    android:gravity="left|center"
+                    android:text="Name"
+                    android:textColor="@color/textBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight=".1"
+                    android:gravity="left|center"
+                    android:text=":"
+                    android:textColor="@color/textBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/nameTv"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:textColor="@color/blue_300"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight=".9"
+                    android:gravity="left|center"
+                    android:text="Min-Max Amount"
+                    android:textColor="@color/textBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight=".1"
+                    android:gravity="left|center"
+                    android:text=":"
+                    android:textColor="@color/textBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/minMaxAmtTv"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:textColor="@color/textBlack"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight=".9"
+                    android:gravity="left|center"
+                    android:text="Interest"
+                    android:textColor="@color/textBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight=".1"
+                    android:gravity="left|center"
+                    android:text=":"
+                    android:textColor="@color/textBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/interestTv"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:textColor="@color/textBlack"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight=".9"
+                    android:gravity="left|center"
+                    android:text="EMI Amount"
+                    android:textColor="@color/textBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight=".1"
+                    android:gravity="left|center"
+                    android:text=":"
+                    android:textColor="@color/textBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/emiAmtTv"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:textColor="@color/textBlack"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight=".9"
+                    android:gravity="left|center"
+                    android:text="EMI Total"
+                    android:textColor="@color/textBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight=".1"
+                    android:gravity="left|center"
+                    android:text=":"
+                    android:textColor="@color/textBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/emiTotalTv"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:textColor="@color/textBlack"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight=".9"
+                    android:gravity="left|center"
+                    android:text="Processing Fee"
+                    android:textColor="@color/textBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight=".1"
+                    android:gravity="left|center"
+                    android:text=":"
+                    android:textColor="@color/textBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/processingFeeTv"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:textColor="@color/textBlack"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".9"
+                    android:gravity="left|center"
+                    android:text="Description"
+                    android:textColor="@color/textBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight=".1"
+                    android:gravity="left|center"
+                    android:text=":"
+                    android:textColor="@color/textBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/descriptionTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:padding="4dp"
+                    android:textColor="@color/textBlack"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight=".9"
+                    android:gravity="left|center"
+                    android:text="Enter loan Amount"
+                    android:textColor="@color/textBlack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight=".1"
+                    android:gravity="left|center"
+                    android:text=":"
+                    android:textColor="@color/textBlack"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/amountET"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edit_background"
+                    android:gravity="center"
+                    android:textColor="@color/textBlack"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/getLoanBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/button_loan_blue"
+                android:gravity="center"
+                android:text="Get Loan"
+                android:textAllCaps="true"
+                android:textColor="@color/textWhite" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

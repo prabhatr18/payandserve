@@ -1,0 +1,131 @@
+
+j
+java:S3008`"TRename this field "NUM_PAGES" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—ÉÃÛ
+]
+java:S1659a"GDeclare "aepsWallet" and all following declarations on a separate line.(ù¶Ü‚
+a
+java:S1659b"KDeclare "aepsWalletType" and all following declarations on a separate line.(Á›ô’
+h
+java:S1659c"MDeclare "aepsWalletAmount" and all following declarations on a separate line.(ŞïàËùÿÿÿÿ
+e
+java:S1659d"JDeclare "aepsWalletBtn" and all following declarations on a separate line.(ÂôŒøüÿÿÿÿ
+i
+java:S1659j"SDeclare "lendingServiceRecycler" and all following declarations on a separate line.(¯‰ğÂ
+d
+java:S1659m"NDeclare "governanceAdapter" and all following declarations on a separate line.(õİ“„
+^
+java:S1659u"HDeclare "imgCardAeps" and all following declarations on a separate line.(‰™Üã
+n
+java:S1450`"XRemove the "NUM_PAGES" field and declare it as a local variable in the relevant methods.(—ÉÃÛ
+o
+java:S1450a"YRemove the "aepsWallet" field and declare it as a local variable in the relevant methods.(ù¶Ü‚
+w
+java:S1450d"\Remove the "aepsWalletBtn" field and declare it as a local variable in the relevant methods.(ÂôŒøüÿÿÿÿ
+s
+java:S1450b"]Remove the "aepsWalletType" field and declare it as a local variable in the relevant methods.(Á›ô’
+z
+java:S1450n"_Remove the "ecommerceAdapter" field and declare it as a local variable in the relevant methods.(¡ø«¿ùÿÿÿÿ
+v
+java:S1450m"`Remove the "governanceAdapter" field and declare it as a local variable in the relevant methods.(õİ“„
+p
+java:S1450u"ZRemove the "imgCardAeps" field and declare it as a local variable in the relevant methods.(‰™Üã
+q
+java:S1450u"[Remove the "imgCardKuber" field and declare it as a local variable in the relevant methods.(‰™Üã
+p
+java:S1450u"ZRemove the "imgCardMatm" field and declare it as a local variable in the relevant methods.(‰™Üã
+r
+java:S1450u"\Remove the "imgCardWallet" field and declare it as a local variable in the relevant methods.(‰™Üã
+u
+java:S1450m"_Remove the "insuranceAdapter" field and declare it as a local variable in the relevant methods.(õİ“„
+p
+java:S1450a"ZRemove the "kuberWallet" field and declare it as a local variable in the relevant methods.(ù¶Ü‚
+x
+java:S1450d"]Remove the "kuberWalletBtn" field and declare it as a local variable in the relevant methods.(ÂôŒøüÿÿÿÿ
+t
+java:S1450b"^Remove the "kuberWalletType" field and declare it as a local variable in the relevant methods.(Á›ô’
+s
+java:S1450m"]Remove the "lendingAdapter" field and declare it as a local variable in the relevant methods.(õİ“„
+o
+java:S1450a"YRemove the "mainWallet" field and declare it as a local variable in the relevant methods.(ù¶Ü‚
+w
+java:S1450d"\Remove the "mainWalletBtn" field and declare it as a local variable in the relevant methods.(ÂôŒøüÿÿÿÿ
+s
+java:S1450b"]Remove the "mainWalletType" field and declare it as a local variable in the relevant methods.(Á›ô’
+o
+java:S1450a"YRemove the "matmWallet" field and declare it as a local variable in the relevant methods.(ù¶Ü‚
+w
+java:S1450d"\Remove the "matmWalletBtn" field and declare it as a local variable in the relevant methods.(ÂôŒøüÿÿÿÿ
+s
+java:S1450b"]Remove the "matmWalletType" field and declare it as a local variable in the relevant methods.(Á›ô’
+x
+java:S1450l"bRemove the "serviceRecyclerView" field and declare it as a local variable in the relevant methods.(éòÂ½
+u
+java:S1450n"ZRemove the "tourAdapter" field and declare it as a local variable in the relevant methods.(¡ø«¿ùÿÿÿÿ
+s
+java:S1450q"XRemove the "viewPager" field and declare it as a local variable in the relevant methods.(åÙ¬Ïûÿÿÿÿ
+R
+java:S2696Œ"6Make the enclosing method "static" or remove this set.(ôŠùÿÿÿÿ
+K
+java:S1874"/Remove this use of "Handler"; it is deprecated.(§çµüÿÿÿÿ
+M
+java:S2696"6Make the enclosing method "static" or remove this set.(Ä€ı©
+M
+java:S2696’"6Make the enclosing method "static" or remove this set.(¹®‚è
+˜
+java:S1186²"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ê³ôä
+˜
+java:S1186ã"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ê³ôä
+=	java:S131Â""Add a default case to this switch.(¼œóÛüÿÿÿÿ
+a
+java:S1874ô"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(ŸŒ¹Ñ
+=	java:S131÷""Add a default case to this switch.(×ö³–úÿÿÿÿ
+i
+java:S3776‹"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(æÃç²
+W	java:S125¦"<This block of commented-out lines of code should be removed.(¤Êàùÿÿÿÿ
+?
+java:S1185Ä"(Remove this method to simply inherit it.(ûŸ¥ï
+D
+java:S1185É"(Remove this method to simply inherit it.(°Ï¦ÿÿÿÿÿ
+V
+java:S1117æ":Rename "alert" which hides the field declared at line 112.(ÌÊÁªúÿÿÿÿ
+R	java:S125ï"<This block of commented-out lines of code should be removed.(É‚°ı
+U
+java:S1874">Remove this use of "startActivityForResult"; it is deprecated.(Œ­ıä
+W	java:S125ˆ"<This block of commented-out lines of code should be removed.(¿©şºûÿÿÿÿ
+Q	java:S125œ"<This block of commented-out lines of code should be removed.(ÑöÆ
+Q	java:S125Å"<This block of commented-out lines of code should be removed.(ÑöÆ
+B
+java:S1874Ì"+Remove this use of "yes"; it is deprecated.(Ä¤Âç
+F
+java:S1874Í"*Remove this use of "no"; it is deprecated.(ÿÌçÈüÿÿÿÿ
+˜
+java:S1186–"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ê³ôä
+8	java:S131ú""Add a default case to this switch.(ø·‰Ç
+R	java:S125ü"<This block of commented-out lines of code should be removed.(÷ÆÓı
+U
+java:S1874€">Remove this use of "startActivityForResult"; it is deprecated.(™Ö÷Œ
+U
+java:S1874†">Remove this use of "startActivityForResult"; it is deprecated.(™Ö÷Œ
+W	java:S125­"<This block of commented-out lines of code should be removed.(›´«ıÿÿÿÿ
+R	java:S125¶"<This block of commented-out lines of code should be removed.(¤ºæ‹
+M
+java:S1144È"1Remove this unused private "confirmPopup" method.( ë’ûÿÿÿÿ
+n
+java:S1192»"RDefine a constant instead of duplicating this literal "IndusInd Fast Tag" 3 times.(¸ªÂİûÿÿÿÿ
+]
+java:S1192Å"FDefine a constant instead of duplicating this literal "title" 7 times.(÷¨
+e
+java:S1192¸"NDefine a constant instead of duplicating this literal "activity_type" 3 times.(Üèé¯
+b
+java:S1192"KDefine a constant instead of duplicating this literal "Icici Bank" 3 times.(¼æÍ¡
+c
+java:S1192ß"LDefine a constant instead of duplicating this literal "distributor" 3 times.(Ü¼™¿
+l	java:S117ú"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“¢íºúÿÿÿÿ
+g	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍíØ
+g	java:S117›"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅŞŠÜ
+g
+java:S1301÷"KReplace this "switch" statement by "if" statements to increase readability.(×ö³–úÿÿÿÿ
+r
+java:S1488–"[Immediately return this expression instead of assigning it to the temporary variable "map".(îö
+A
+java:S5411ü"*Use the primitive boolean expression here.(Ü›Í

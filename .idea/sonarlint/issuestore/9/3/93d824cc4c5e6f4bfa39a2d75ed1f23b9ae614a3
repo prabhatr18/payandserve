@@ -1,0 +1,83 @@
+
+P
+java:S1118*":Add a private constructor to hide the implicit public one.(™·»
+Z
+java:S1874G"?Remove this use of "FLAG_TRANSLUCENT_STATUS"; it is deprecated.(¿™¡’ûÿÿÿÿ
+V	java:S125H"<This block of commented-out lines of code should be removed.(ÊËı¨ûÿÿÿÿ
+F
+java:S1874I"0Remove this use of "getColor"; it is deprecated.(éã…‹
+X
+java:S1874J"=Remove this use of "setSystemUiVisibility"; it is deprecated.(ÌØÜòüÿÿÿÿ
+b
+java:S1874J"GRemove this use of "SYSTEM_UI_FLAG_LIGHT_STATUS_BAR"; it is deprecated.(ÌØÜòüÿÿÿÿ
+R
+java:S1874T"7Remove this use of "FLAG_FULLSCREEN"; it is deprecated.( ÌÄéùÿÿÿÿ
+R
+java:S1874T"7Remove this use of "FLAG_FULLSCREEN"; it is deprecated.( ÌÄéùÿÿÿÿ
+i	java:S100„"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°ÏÂ¨ÿÿÿÿÿ
+O
+java:S1874­"3Remove this use of "getDrawable"; it is deprecated.(´İí øÿÿÿÿ
+O
+java:S1874Ã"3Remove this use of "getDrawable"; it is deprecated.(´İí øÿÿÿÿ
+i
+java:S3776Ï"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(‹ŒµÏ
+_
+java:S5361Ğ"HReplace this call to "replaceAll()" by a call to the "replace()" method.(†É¡¥
+_
+java:S5361Ñ"HReplace this call to "replaceAll()" by a call to the "replace()" method.(èäáó
+J
+java:S1874Ô"3Remove this use of "getDrawable"; it is deprecated.(¾İÉ†
+O
+java:S1874Ö"3Remove this use of "getDrawable"; it is deprecated.(—îšõıÿÿÿÿ
+O
+java:S1874Ø"3Remove this use of "getDrawable"; it is deprecated.(›òşÿÿÿÿ
+O
+java:S1874Ú"3Remove this use of "getDrawable"; it is deprecated.( ‹ìşÿÿÿÿ
+J
+java:S1874Ü"3Remove this use of "getDrawable"; it is deprecated.(ç‘ü°
+J
+java:S1874Ş"3Remove this use of "getDrawable"; it is deprecated.(´ùñ
+I
+java:S1874à"3Remove this use of "getDrawable"; it is deprecated.(¨ĞJ
+J
+java:S1874â"3Remove this use of "getDrawable"; it is deprecated.(É²Œ•
+O
+java:S1874ä"3Remove this use of "getDrawable"; it is deprecated.(¡ˆÄ¬ûÿÿÿÿ
+O
+java:S1874æ"3Remove this use of "getDrawable"; it is deprecated.(ÑÌÙ‚ÿÿÿÿÿ
+J
+java:S1874è"3Remove this use of "getDrawable"; it is deprecated.(›Ñ–
+J
+java:S1874ê"3Remove this use of "getDrawable"; it is deprecated.(µ²›£
+O
+java:S1874ì"3Remove this use of "getDrawable"; it is deprecated.(»õÄ½ıÿÿÿÿ
+J
+java:S1874î"3Remove this use of "getDrawable"; it is deprecated.(¶÷ÏÁ
+O
+java:S1874ğ"3Remove this use of "getDrawable"; it is deprecated.(æ€¼¬ûÿÿÿÿ
+O
+java:S1874ò"3Remove this use of "getDrawable"; it is deprecated.(«×…Ùùÿÿÿÿ
+J
+java:S1874ô"3Remove this use of "getDrawable"; it is deprecated.(áıĞî
+O
+java:S1874ö"3Remove this use of "getDrawable"; it is deprecated.(ï§üÿÿÿÿ
+O
+java:S1874ø"3Remove this use of "getDrawable"; it is deprecated.(ÒÅµÍûÿÿÿÿ
+J
+java:S1874ú"3Remove this use of "getDrawable"; it is deprecated.(áıĞî
+O
+java:S1874ü"3Remove this use of "getDrawable"; it is deprecated.(’§•£øÿÿÿÿ
+O
+java:S1874ş"3Remove this use of "getDrawable"; it is deprecated.(Å«ÁÌÿÿÿÿÿ
+O
+java:S1874€"3Remove this use of "getDrawable"; it is deprecated.(»õÄ½ıÿÿÿÿ
+O
+java:S1874‚"3Remove this use of "getDrawable"; it is deprecated.(ğ§Ê¥ıÿÿÿÿ
+J
+java:S1874„"3Remove this use of "getDrawable"; it is deprecated.(ä¤éô
+b
+java:S5998¼"LRefactor this repetition that can lead to a stack overflow for large inputs.(›r
+n
+java:S3252Å"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(ÅÈ©†
+I
+java:S1874Î"3Remove this use of "getDeviceId"; it is deprecated.(¹ÒÓ,

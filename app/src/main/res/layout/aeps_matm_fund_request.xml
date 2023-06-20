@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_light"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingTop="5dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:text="Load Wallet"
+            android:textStyle="bold"
+            android:textColor="@color/textWhite"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbWallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/white"
+                    android:checked="true"
+                    android:fontFamily="@font/poppins"
+                    android:text="To Wallet"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rbKuber"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:text="To Kuber"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rbBank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:buttonTint="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:text="To Bank"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="@dimen/_2sdp"
+        app:cardElevation="@dimen/_1sdp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/inputCon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_30sdp"
+
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <LinearLayout
+                    android:id="@+id/secBank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvBankDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/GRAY"
+                        android:fontFamily="@font/poppins_light"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                        android:layout_marginRight="@dimen/_16sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:visibility="gone"/>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                        android:layout_marginRight="@dimen/_16sdp"
+                        android:hint="Select Bank Account"
+                        android:visibility="visible"
+                        app:errorEnabled="true"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        app:hintAnimationEnabled="true"
+                        app:hintEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etSelectAccount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:fontFamily="@font/poppins"
+                            android:importantForAutofill="no"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:paddingTop="@dimen/_8sdp"
+                            android:paddingBottom="@dimen/_6sdp"
+                            android:singleLine="true"
+                            android:soundEffectsEnabled="true"
+                            android:textColor="@color/textGray"
+                            android:textColorHint="@color/textHintGray"
+                            android:textSize="@dimen/_12sdp"
+                            android:visibility="visible" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                        android:layout_marginRight="@dimen/_16sdp"
+                        android:hint="Select Payment Mode"
+                        android:visibility="visible"
+                        app:errorEnabled="true"
+                        app:hintAnimationEnabled="true"
+                        app:hintEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etMode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:fontFamily="@font/poppins"
+                            android:importantForAutofill="no"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:paddingTop="@dimen/_8sdp"
+                            android:paddingBottom="@dimen/_6sdp"
+                            android:singleLine="true"
+                            android:soundEffectsEnabled="true"
+                            android:textColor="@color/textGray"
+                            android:textColorHint="@color/textHintGray"
+                            android:textSize="@dimen/_12sdp"
+                            android:visibility="visible" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/fredoka_one"
+                        android:gravity="center_vertical"
+                        android:hint="@string/rupee"
+                        android:textColor="#aaa"
+                        android:textColorHint="@color/textGrayBoth"
+                        android:textSize="@dimen/_16sdp" />
+
+                    <EditText
+                        android:id="@+id/etAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:background="#00AAAAAA"
+                        android:fontFamily="@font/fredoka_one"
+                        android:gravity="center_vertical"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="@dimen/_1sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/textGray"
+                        android:textColorHint="@color/textHintGray"
+                        android:textSize="@dimen/_16sdp"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/div3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Request Amount"
+                    android:textColor="@color/textGrayBoth"
+                    android:textSize="@dimen/_10sdp" />
+
+                <EditText
+                    android:id="@+id/etTPin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lblAmount"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:background="#00AAAAAA"
+                    android:digits="1234567890"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center_vertical"
+                    android:inputType="numberPassword"
+                    android:letterSpacing="0.5"
+                    android:maxLength="8"
+                    android:textColor="@color/textBlack"
+                    android:textColorHint="@color/textHintGray"
+                    android:textSize="@dimen/_16sdp" />
+
+                <View
+                    android:id="@+id/lbl3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/etTPin"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:background="@color/textRed" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lbl3"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:fontFamily="@font/poppins"
+                    android:text="TPin is required"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textGray"
+                    android:textSize="@dimen/_10sdp"
+                    app:tint="@color/textRed" />
+
+                <TextView
+                    android:id="@+id/tvGenPin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/baloo"
+                    android:text="@string/generate_tpin"
+                    android:textAllCaps="false"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/_12sdp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnProceed"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/primary_border_red"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Proceed"
+                    android:layout_marginBottom="@dimen/_30sdp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textWhite"
+                    android:textSize="@dimen/_16sdp" />
+            </LinearLayout>
+
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

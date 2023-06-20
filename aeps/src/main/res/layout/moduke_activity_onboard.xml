@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Gray">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:elevation="5dp">
+
+                <ImageView
+                    android:id="@+id/back_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_right_arrow"
+                    android:rotation="180"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Onboarding"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </FrameLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:visibility="visible">
+
+                    <EditText
+                        android:id="@+id/etName"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/round_edittext_background"
+                        android:paddingStart="10dp"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center_vertical"
+                        android:hint="Name"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <EditText
+                        android:id="@+id/etFather"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/round_edittext_background"
+                        android:paddingStart="10dp"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center_vertical"
+                        android:hint="Father Name"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <EditText
+                        android:id="@+id/etThana"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/round_edittext_background"
+                        android:paddingStart="10dp"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center_vertical"
+                        android:hint="Thana"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <EditText
+                        android:id="@+id/etDob"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/round_edittext_background"
+                        android:paddingStart="10dp"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center_vertical"
+                        android:hint="Date of birth"
+                        android:focusable="false"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <EditText
+                        android:id="@+id/etPhone"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/round_edittext_background"
+                        android:digits="1234567890"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center_vertical"
+                        android:hint="Phone"
+                        android:paddingStart="10dp"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/etPhoneAlternate"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/round_edittext_background"
+                        android:digits="1234567890"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center_vertical"
+                        android:hint="Alternate Phone Number"
+                        android:paddingStart="10dp"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/etAadhar"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/round_edittext_background"
+                        android:digits="1234567890"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center_vertical"
+                        android:hint="Aadhaar Number"
+                        android:paddingStart="10dp"
+                        android:inputType="phone"
+                        android:maxLength="12"
+                        android:maxLines="1"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/etPan"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/round_edittext_background"
+                        android:paddingStart="10dp"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center_vertical"
+                        android:hint="Pan Number"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <EditText
+                        android:id="@+id/etPincode"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/round_edittext_background"
+                        android:digits="1234567890"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center_vertical"
+                        android:hint="Pincode"
+                        android:paddingStart="10dp"
+                        android:inputType="phone"
+                        android:maxLength="6"
+                        android:maxLines="1"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/etState"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/round_edittext_background"
+                        android:paddingStart="10dp"
+                        android:focusable="false"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center_vertical"
+                        android:hint="State"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <EditText
+                        android:id="@+id/etCity"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/round_edittext_background"
+                        android:paddingStart="10dp"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center_vertical"
+                        android:hint="City"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <EditText
+                        android:id="@+id/etAddress"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/round_edittext_background"
+                        android:paddingStart="10dp"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center_vertical"
+                        android:hint="Address"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        tools:ignore="RtlSymmetry" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/aadharPics"
+                        android:layout_width="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        layout="@layout/m_document_image_preview"
+                           />
+
+                    <include
+                        android:id="@+id/pancardPics"
+                        android:layout_width="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        layout="@layout/m_document_image_preview"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/passports"
+                        android:layout_width="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        layout="@layout/m_document_image_preview"
+                        />
+
+                    <include
+                        android:id="@+id/shoppics"
+                        android:layout_width="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        layout="@layout/m_document_image_preview"
+                        />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_margin="20dp"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@font/poppins_bold"
+                    android:gravity="center"
+                    android:text="Submit"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>
+

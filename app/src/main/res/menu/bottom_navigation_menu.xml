@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/btnProfile"
+        android:enabled="true"
+        android:icon="@drawable/ic_user"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/btnReports"
+        android:enabled="true"
+        android:icon="@drawable/ic_order_dash_two"
+        android:title="Report"/>
+
+    <item
+        android:id="@+id/btnHome"
+        android:enabled="true"
+        android:title=""/>
+
+    <item
+        android:id="@+id/btnProfit"
+        android:enabled="true"
+        android:icon="@drawable/ic_profite_commi"
+        android:title="Profit"/>
+
+    <item
+        android:id="@+id/btnMore"
+        android:enabled="true"
+        android:icon="@drawable/ic_settings"
+        android:title="More"/>
+</menu>

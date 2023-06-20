@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8A000000" />
+
+
+    <LinearLayout
+        android:id="@+id/loaderConLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white_card"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/loaderCon"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/LottieAnim"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/loader" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bottomTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="10sp"
+            android:background="@color/white_card"
+            android:fontFamily="@font/fredoka_one"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:text="Please Wait .."
+            android:textColor="@color/textGray"
+            android:textSize="@dimen/_10sdp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:visibility="gone"
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:ems="5"
+            android:layout_height="@dimen/_25sdp"
+            android:text="Login"
+            android:background="@drawable/primary_stroke_bg"
+            android:textColor="@color/textRed"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/fredoka_one"
+            android:textAllCaps="false"
+            android:layout_marginBottom="@dimen/_16sdp"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imgClose"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_above="@id/loaderConLayout"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/close_icon"
+        android:visibility="gone"
+        app:tint="@color/textWhite" />
+
+    <ImageView
+        android:id="@+id/imgShare"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_above="@id/loaderConLayout"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_toLeftOf="@id/imgMinimise"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/share_new_icon"
+        android:visibility="gone"
+        app:tint="@color/textWhite" />
+
+    <ImageView
+        android:id="@+id/imgMinimise"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_above="@id/loaderConLayout"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_toLeftOf="@id/imgClose"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_minimise"
+        android:visibility="gone"
+        app:tint="@color/textWhite"
+        android:padding="@dimen/_3sdp"/>
+
+</RelativeLayout>

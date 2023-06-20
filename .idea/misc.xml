@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Mahagram Project/Mahagram Android Github/payandserve_newdesign/payandserve_newdesign/app/src/main/res/layout/buy_product_list_item.xml" value="0.209375" />
+        <entry key="..\:/Mahagram Project/Mahagram Android Github/payandserve_newdesign/payandserve_newdesign/app/src/main/res/layout/buyproduct_activity.xml" value="0.209375" />
+        <entry key="..\:/Mahagram Project/Mahagram Latest/Dec2021/payandserve_newdesign/payandserve_newdesign/app/src/main/res/drawable-v24/round_border.xml" value="0.22552083333333334" />
+        <entry key="..\:/Mahagram Project/Mahagram Latest/Dec2021/payandserve_newdesign/payandserve_newdesign/app/src/main/res/layout/aadhaar_statment_item.xml" value="0.25" />
+        <entry key="..\:/Mahagram Project/Mahagram Latest/Dec2021/payandserve_newdesign/payandserve_newdesign/app/src/main/res/layout/activity_vcart.xml" value="0.20520833333333333" />
+        <entry key="..\:/Mahagram Project/Mahagram Latest/Dec2021/payandserve_newdesign/payandserve_newdesign/app/src/main/res/layout/adapter_report_aeps_fund_req_list_row.xml" value="0.209375" />
+        <entry key="..\:/Mahagram Project/Mahagram Latest/Dec2021/payandserve_newdesign/payandserve_newdesign/app/src/main/res/layout/adapter_report_product_list_row.xml" value="0.209375" />
+        <entry key="..\:/Mahagram Project/Mahagram Latest/Dec2021/payandserve_newdesign/payandserve_newdesign/app/src/main/res/layout/buy_product_list_item.xml" value="0.25" />
+        <entry key="..\:/Mahagram Project/Mahagram Latest/Dec2021/payandserve_newdesign/payandserve_newdesign/app/src/main/res/layout/buyproduct_activity.xml" value="0.20520833333333333" />
+        <entry key="..\:/Mahagram Project/Mahagram Latest/Dec2021/payandserve_newdesign/payandserve_newdesign/app/src/main/res/layout/cashback_item.xml" value="0.209375" />
+        <entry key="..\:/Mahagram Project/Mahagram Latest/Dec2021/payandserve_newdesign/payandserve_newdesign/app/src/main/res/layout/id_stock_item.xml" value="0.25" />
+        <entry key="..\:/Mahagram Project/Mahagram Latest/Dec2021/payandserve_newdesign/payandserve_newdesign/app/src/main/res/layout/report_toolbar.xml" value="0.209375" />
+        <entry key="app/src/main/res/layout/activity_intro_slider.xml" value="0.18796296296296297" />
+        <entry key="app/src/main/res/layout/welcome_slider_one.xml" value="0.19739583333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

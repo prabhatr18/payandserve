@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/holderCon"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_2sdp"
+    android:layout_marginBottom="@dimen/_2sdp"
+    android:layout_marginRight="@dimen/_5sdp"
+    app:cardBackgroundColor="@color/white_card"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvPlanPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/plan_price_bg"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:text="300"
+            android:textColor="@color/textGray"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/primary_border_red"
+            android:fontFamily="@font/poppins"
+            android:text="Select"
+            android:textAllCaps="false"
+            android:textColor="@color/textWhite" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvPlanPrice"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:background="@color/Gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/tvDetail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="8.5"
+                android:fontFamily="@font/poppins_light"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Now get truly Unlimited Local/NationalNow get truly Unlimited Local/NationalNow get truly Unlimited Local/National "
+                android:textColor="@color/textGray"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/imgExpand"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="bottom|end">
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/ic_information"
+                    android:padding="@dimen/_5sdp"
+                    android:textAllCaps="false"
+                    app:tint="@color/textWhite" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--            -->
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

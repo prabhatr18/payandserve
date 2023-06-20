@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_light"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center_vertical"
+            android:text="UPI Service"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/textWhite"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/serviceType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center_vertical"
+            android:text="Type : Generate QR"
+            android:textColor="@color/textWhite"
+            android:textSize="@dimen/_10sdp" />
+
+        <ImageView
+            android:id="@+id/imgAllReport"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/icon_reports"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/_10sdp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginEnd="@dimen/_16sdp"/>
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_2sdp"
+        app:cardElevation="@dimen/_1sdp"
+        app:cardBackgroundColor="@color/white_card">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/inputCon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tvBankDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/GRAY"
+                    android:fontFamily="@font/poppins_light"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:visibility="gone"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:hint="Name"
+                    android:visibility="visible"
+                    app:errorEnabled="true"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_6sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/textGray"
+                        android:textColorHint="@color/textHintGray"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="visible"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:hint="Mobile Number"
+                    android:visibility="visible"
+                    app:errorEnabled="true"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:importantForAutofill="no"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:maxLength="10"
+                        android:digits="1234567890"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_6sdp"
+                        android:singleLine="true"
+                        android:soundEffectsEnabled="true"
+                        android:textColor="@color/textGray"
+                        android:textColorHint="@color/textHintGray"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="visible" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/upiLayout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:hint="UPI Id"
+                    android:visibility="gone"
+                    app:errorEnabled="true"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etUpi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_6sdp"
+                        android:singleLine="true"
+                        android:soundEffectsEnabled="true"
+                        android:textColor="@color/textGray"
+                        android:textColorHint="@color/textHintGray"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="visible"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/fredoka_one"
+                        android:gravity="center_vertical"
+                        android:hint="@string/rupee"
+                        android:textColor="@color/textBlack"
+                        android:textColorHint="@color/textGray"
+                        android:textSize="@dimen/_16sdp" />
+
+                    <EditText
+                        android:id="@+id/etAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:background="#00AAAAAA"
+                        android:fontFamily="@font/fredoka_one"
+                        android:gravity="center_vertical"
+                        android:inputType="number"
+                        android:digits="1234506789"
+                        android:paddingStart="@dimen/_1sdp"
+                        android:singleLine="true"
+                        android:hint="0.00"
+                        android:maxLength="4"
+                        android:textColor="@color/textGray"
+                        android:textSize="@dimen/_16sdp"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/div3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:background="@color/textRed" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Enter Amount"
+                    android:textColor="@color/textGray"
+                    android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnProceed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/primary_border_red"
+        android:fontFamily="@font/poppins_light"
+        android:text="Proceed"
+        android:textAllCaps="false"
+        android:textColor="@color/textWhite"
+        android:textSize="@dimen/_16sdp" />
+</RelativeLayout>

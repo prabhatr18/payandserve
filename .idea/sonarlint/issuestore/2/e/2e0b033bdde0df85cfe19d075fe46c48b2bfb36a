@@ -1,0 +1,20 @@
+
+o	java:S116/"URename this field "PAGE_COUNT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊœÂÖùÿÿÿÿ
+s	java:S1160"YRename this field "MAX_PAGE_COUNT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªöÎ€ÿÿÿÿÿ
+d	java:S1161"PRename this field "TITLE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÉÀ³W
+c	java:S1161"ORename this field "TYPE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÉÀ³W
+h
+java:S1659+"MDeclare "visibleItemCount" and all following declarations on a separate line.(üÆö›ýÿÿÿÿ
+7
+java:S16591""Declare "TYPE" on a separate line.(ÉÀ³W
+R
+java:S2696Ï"6Make the enclosing method "static" or remove this set.(ƒÝâüÿÿÿÿ
+R
+java:S2696Ù"6Make the enclosing method "static" or remove this set.(›×‹ûÿÿÿÿ
+L
+java:S1068*"1Remove this unused "REQUEST_COUNT" private field.(‘î˜³úÿÿÿÿ
+E
+java:S1066h"/Merge this if statement with the enclosing one.(à—åª
+g	java:S117–"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅÞŠÜ
+U
+java:S1155¢">Use isEmpty() to check whether the collection is empty or not.(¥Ë©Ñ

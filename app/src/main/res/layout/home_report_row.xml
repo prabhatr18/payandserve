@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_3sdp"
+    android:layout_marginEnd="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_3sdp"
+    app:cardBackgroundColor="@color/cardBgTrans"
+    app:cardCornerRadius="@dimen/_5sdp"
+    app:cardElevation="1dp">
+
+    <RelativeLayout
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_gravity="center"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/aeps_report_icon"
+            android:visibility="visible"
+            app:tint="@color/img_primary" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/title"
+            android:background="@color/Gray" />
+
+        <com.digital.payandserve.customfonts.MyTextView_Montserrat_Medium
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="AEPS"
+            android:textColor="@color/textBlack"
+            android:textSize="@dimen/_10sdp" />
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

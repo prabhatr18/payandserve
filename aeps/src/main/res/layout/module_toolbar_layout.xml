@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/toolbarCon"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="16dp"
+        android:rotation="180"
+        android:src="@drawable/ic_right_arrow"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/tvToolBarTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgBack"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Cash Withdraw"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginBottom="5dp"/>
+</RelativeLayout>
